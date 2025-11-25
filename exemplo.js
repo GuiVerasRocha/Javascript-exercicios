@@ -1,51 +1,45 @@
-// //Alert - apresenta uma menssagem na tela
-// window.alert("Ola Turma do borges")
-// //Confirm - pergunta com ok/cancela (Retorna verdadeiro ou falso)
-// window.confirm("O Jonas vai casar!")
-// //Prompt - pega o texto da tela
-// window.prompt("Qual o seu nome?")
+//For - loop contato
 
-// // Comentario em linha
-// /*
-// comentario em texto
-// */
+// Contador do 0 ao 10
+//for(inicializador; condição; contador)
 
-// console.log("Multimidia")
-
-// let nome = prompt ("Informe o seu nome: ")
-
-// console.log("bem vindo! " + nome)
-
-// // let numero1 = Number.parseInt(prompt("Digite o primeiro número: "))
-// // let numero2 = Number.parseInt(prompt("Digite o segundo número: "))
-
-// // let resultado = numero1 + numero2
-
-// let numero1 = Number.parseFloat(prompt("Digite o primeiro número: "))
-// let numero2 = Number.parseFloat(prompt("Digite o segundo número: "))
-
-// let resultado = numero1 + numero2
-
-// console.log(resultado)
-
-// let idade = window.prompt("Qual sua idade?")
-
-// if (idade >=18){
-//     console.log("Maior de Idade! Da-lheee")
-// }else{
-//     console.log("Você é menor de idade!")
+// for(let num = 0; num <= 10; num++ ){
+//     console.log("Eu vim barganhar " + num)
 // }
 
-// switch (Idade) {
-//     case "18":
-//         console.log("Maior de Idade!")
-//         break;
+// let salario = 1000
 
-//     case "27":
-//         console.log("Esta perto dos 30!")
-//         break
+// while (salario < 5000){
+//     salario = 100 + salario
+//     salario += 100
 
-//     default:
-//         console.log("nada a dizer")
-//         break;
+//     console.log("O salario é de R$: " + salario)
 // }
+
+// //Do while - loop condicional
+// let aumento = 1000
+// do {
+//     console.log("Esse é o seu saldo: " + aumento)
+//     aumento += 100
+
+// } while (aumento < 5000);
+
+//Array
+let frutas = ["Banana", "Laranja", "Maça", "Manga", "Melancia", "Uva"]
+
+// console.log(fruta[3])
+// console.log(fruta[5])
+
+//forEach => percorre uma lista
+frutas.forEach(palmeiras => {
+    console.log("A fruta é: " + palmeiras)
+})
+
+//Percorrer uma lista com for
+for (let indice = 0; indice < frutas.length; indice++){
+    console.log(frutas[indice])
+
+    if(frutas[indice] == "Uva"){
+        console.log("Eu gosto de " + frutas[indice])
+    }
+}
